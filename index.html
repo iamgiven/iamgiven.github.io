@@ -18,6 +18,9 @@
   .lead { color: var(--muted); margin: 0 0 32px; }
   h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
   .app { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .app { display: flex; gap: 16px; align-items: flex-start; }
+  .app img { width: 64px; height: 64px; border-radius: 22%; flex: none; }
+  .app .info { min-width: 0; }
   .app h3 { margin: 0 0 4px; font-size: 18px; }
   .app p { margin: 0 0 14px; color: var(--muted); }
   .links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
@@ -33,11 +36,15 @@
 
   <h2>Apps</h2>
   <section class="app">
-    <h3>Animatry: Live Wallpaper</h3>
-    <p>Mathematical animations as a live wallpaper.</p>
-    <div class="links">
-      <a href="/animatry-legal/privacy-policy">Privacy Policy</a>
-      <a href="/animatry-legal/terms-of-service">Terms of Service</a>
+    <img src="icons/animatry.png" alt="Animatry icon">
+    <div class="info">
+      <h3>Animatry: Live Wallpaper</h3>
+      <p>Mathematical animations as a live wallpaper.</p>
+      <div class="links">
+        <a href="https://play.google.com/store/apps/details?id=com.iamgiven.animatry.wallpaper">Google Play</a>
+        <a href="/animatry-legal/privacy-policy">Privacy Policy</a>
+        <a href="/animatry-legal/terms-of-service">Terms of Service</a>
+      </div>
     </div>
   </section>
 
